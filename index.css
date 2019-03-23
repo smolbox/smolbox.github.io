@@ -6,6 +6,7 @@ body {
   -webkit-animation: Gradient 15s ease infinite;
   -moz-animation: Gradient 15s ease infinite;
   animation: Gradient 15s ease infinite;
+  margin: 0;
 }
 
 @-webkit-keyframes Gradient {
@@ -44,14 +45,27 @@ body {
   }
 }
 
-.content {
+.container {
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.content .logo {
+.container .content {
+  padding-bottom: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container .content .logo {
   font-size: 5em;
   font-weight: 600;
+}
+
+.container .content .icons {
+  font-size: 2em;
+  font-weight: 300;
 }
